@@ -8,13 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class TypeEducation extends Model
 {
     use HasFactory;
-    protected $fillable = ['title','slug', 'modules_id'];
+    protected $fillable = ['title','slug'];
 
 
-    public function module()
-    {
-        return $this->belongsTo(Module::class,'modules_id');
-    }
+
     public function Education()
     {
         return $this->hasMany(Education::class,'education_id');

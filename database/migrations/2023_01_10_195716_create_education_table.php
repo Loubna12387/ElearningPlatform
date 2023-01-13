@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('description');
             $table->string('image');
             $table->string('prix');
+            
             $table->foreignId('type_education_id');
             $table->timestamps();
         });

@@ -12,6 +12,6 @@ class Content extends Model
     protected $fillable=['image','video','texte','paragraphes_id'];
     public function paragraphe()
     {
-        return $this->belongsTo(Paragraph::class,'paragraphes_id');
+        return $this->belongsTo(Paragraphe::class,'paragraphes_id');
     }
 }
